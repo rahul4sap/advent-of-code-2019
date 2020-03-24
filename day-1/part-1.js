@@ -1,7 +1,6 @@
 const fs = require("fs");
-const fuelRequired = mass => Math.round(mass / 3) - 2;
 
-fs.readFile("./inputFile", "utf-8", (err, data) => {
+fs.readFile("./inputFile", (err, data) => {
   if (err) console.log(err);
   else {
     const massInput = [] = data.toString().split(/\r\n/);    
@@ -12,3 +11,4 @@ fs.readFile("./inputFile", "utf-8", (err, data) => {
     console.log(result);
   }
 });
+
